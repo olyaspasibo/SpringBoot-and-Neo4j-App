@@ -9,7 +9,8 @@ public class Movie {
     @Id
     private Long id;
     private String title;
-    private String director;
+    private String tagline;
+
 
     public Movie() {
     }
@@ -26,7 +27,7 @@ public class Movie {
 
     public String getDirector() {
 
-        return director;
+        return tagline;
     }
 
 

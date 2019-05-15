@@ -13,7 +13,7 @@ public class User {
     @Id
     private Long id;
     private String name;
-    private Integer age;
+    private Integer born;
 
     @Relationship(type = "RATED", direction = Relationship.INCOMING)
     private List<Movie> movies;
@@ -30,6 +30,6 @@ public class User {
     }
 
     public Integer getAge() {
-        return age;
+        return born;
     }
 }
